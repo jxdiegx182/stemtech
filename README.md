@@ -1,7 +1,7 @@
 # STEM BOT 3D 🚀
 
 <p align="center">
-  <img src="./public/logo.png" width="220" alt="Stem Bot 3D Logo" />
+  <img src="./public/StemBot3D.png" width="220" alt="Stem Bot 3D Logo" />
 </p>
 
 <p align="center">
