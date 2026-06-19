@@ -13,7 +13,7 @@ export default function Hero() {
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h2 className="max-w-xs text-2xl font-semibold leading-7 tracking-tight text-black dark:text-zinc-50 mb-3">
-            Querido Algoritmo conéctame con otros locos obsesionados con Startup & Tech.
+            Querido Algoritmo conéctame con otros locos obsesionados con Startups & Tech.
           </h2>
          
         </div>
