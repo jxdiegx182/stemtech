@@ -35,10 +35,10 @@ export default function Graph() {
 
       points.push({ x, y });
 
-      // Dibujar punto rojo
+      // Dibujar punto azul
       ctx.beginPath();
       ctx.arc(x, y, 5, 0, 2 * Math.PI);
-      ctx.fillStyle = "red";
+      ctx.fillStyle = "blue";
       ctx.fill();
     }
 
@@ -56,12 +56,13 @@ export default function Graph() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4 p-6 bg-black min-h-screen text-white">
-      <h1 className="text-3xl font-bold">
+    <div className="flex flex-col items-center justify-center h-full w-full gap-1 p-1 bg-zinc-50 min-h-24 text-black dark:bg-black dark:text-zinc-50">
+
+      <h1 className="text-2xl font-bold">
         Grafo Geométrico
       </h1>
 
-      <div className="flex gap-4">
+      <div className="flex gap-1">
         <div>
           <label>Vértices:</label>
           <input
@@ -69,7 +70,7 @@ export default function Graph() {
             value={vertices}
             min="3"
             onChange={(e) => setVertices(Number(e.target.value))}
-            className="ml-2 p-1 text-white"
+            className="ml-2 p-1 text-black bg-zinc-50 dark:bg-black"
           />
         </div>
 
@@ -80,16 +81,16 @@ export default function Graph() {
             value={radius}
             min="50"
             onChange={(e) => setRadius(Number(e.target.value))}
-            className="ml-2 p-1 text-white"
+            className="ml-2 p-1 text-black bg-zinc-50 dark:bg-black"
           />
         </div>
       </div>
 
       <canvas
         ref={canvasRef}
-        width={400}
-        height={300}
-        className="border border-black-500 bg-blue-900"
+        width={300}
+        height={200}
+        className="border border-black-900 bg-zinc-500 mt-1"
       />
     </div>
   );
