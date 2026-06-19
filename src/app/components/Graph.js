@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from "react";
 export default function Graph() {
   const canvasRef = useRef(null);
 
-  const [vertices, setVertices] = useState(5);
-  const [radius, setRadius] = useState(150);
+  const [vertices, setVertices] = useState(9);
+  const [radius, setRadius] = useState(100);
 
   useEffect(() => {
     drawGraph();
