@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 export default function Graph() {
   const canvasRef = useRef(null);
@@ -8,12 +8,10 @@ export default function Graph() {
   const [vertices, setVertices] = useState(9);
   const [radius, setRadius] = useState(100);
 
-  useEffect(() => {
-    drawGraph();
-  }, [vertices, radius]);
-
-  const drawGraph = () => {
+  const drawGraph = useCallback(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return;
+
     const ctx = canvas.getContext("2d");
 
     const width = canvas.width;
@@ -53,7 +51,11 @@ export default function Graph() {
         ctx.stroke();
       }
     }
-  };
+  }, [vertices, radius]);
+
+  useEffect(() => {
+    drawGraph();
+  }, [drawGraph]);
 
   return (
     <div className="flex flex-col items-center justify-center h-full w-full gap-1 p-1 bg-zinc-50 min-h-24 text-black dark:bg-black dark:text-zinc-50">
