@@ -49,7 +49,7 @@ export const pillarsSection = {
       description:
         "Aplicaciones web, sistemas internos, interfaces, APIs, bases de datos y herramientas digitales para organizar, automatizar y escalar procesos.",
       icon: "chip",
-      tags: ["Next.js", "React", "Node.js", "Supabase", "APIs"],
+      tags: ["Next.js", "JavaScript", "Node.js", "PostgreSQL", "APIs", "Backend", "Frontend", "Authentication"],
     },
   ],
 };
