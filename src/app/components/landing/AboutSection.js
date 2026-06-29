@@ -40,7 +40,7 @@ export default function AboutSection() {
   return (
     <section
       id="sobre-mi"
-      className="bg-black py-24 sm:py-36"
+      className="py-24 sm:py-36"
       aria-labelledby="process-title"
     >
       <div className="mx-auto grid max-w-[1100px] gap-10 px-5 sm:px-6 lg:grid-cols-[.95fr_1.05fr] lg:items-center">

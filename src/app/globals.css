@@ -49,10 +49,13 @@ h3 {
 .tech-grid-background {
   background-color: var(--background);
   background-image:
-    radial-gradient(circle at 50% 0%, rgba(0, 159, 227, 0.08), transparent 34rem),
-    linear-gradient(var(--border-soft) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border-soft) 1px, transparent 1px);
-  background-size: auto, 96px 96px, 96px 96px;
+    radial-gradient(ellipse 96rem 56rem at 80% 0%, rgb(0, 159, 227), transparent 78%),
+    linear-gradient(180deg, #010b11 0%, #08304f 42%, #3f6684 100%),
+    linear-gradient(var(--border-soft) 1px, transparent 10px),
+    linear-gradient(90deg, var(--border-soft) 1px, transparent 10px);
+  background-size: auto, auto, 96px 96px, 96px 96px;
+  background-repeat: no-repeat, no-repeat, repeat, repeat;
+  background-position: top center, top center, top center, top center;
 }
 
 .section-grid {
@@ -67,15 +70,15 @@ h3 {
 
 .hero-tech-background {
   background:
-    radial-gradient(circle at 50% 24%, rgba(0, 159, 227, 0.2), transparent 27rem),
-    radial-gradient(circle at 50% 4%, rgba(0, 110, 160, 0.32), transparent 34rem),
-    linear-gradient(180deg, #001624 0%, #000910 52%, #000000 100%);
+    radial-gradient(ellipse 90rem 34rem at 50% 20%, rgba(0, 159, 227, 0.2), transparent 72%),
+    radial-gradient(ellipse 104rem 42rem at 50% 0%, rgba(0, 110, 160, 0.32), transparent 74%),
+    linear-gradient(180deg, rgba(0, 22, 36, 0.6) 0%, rgba(0, 9, 16, 0.24) 52%, transparent 100%);
 }
 
 .hero-dot-wave {
   background-image:
     radial-gradient(circle, rgba(105, 205, 255, 0.38) 1px, transparent 1.35px),
-    radial-gradient(circle, rgba(242, 244, 246, 0.18) 0.8px, transparent 1.2px);
+    radial-gradient(circle, rgba(58, 125, 193, 0.18) 0.8px, transparent 1.2px);
   background-position:
     0 0,
     18px 20px;

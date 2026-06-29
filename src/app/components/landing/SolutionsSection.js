@@ -7,7 +7,7 @@ export default function SolutionsSection() {
   return (
     <section
       id="servicios"
-      className="bg-black py-24 sm:py-36"
+      className="py-24 sm:py-36"
       aria-labelledby="pillars-title"
     >
       <div className="mx-auto max-w-[1100px] px-5 sm:px-6">

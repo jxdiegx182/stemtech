@@ -5,7 +5,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-white/[0.06] bg-black">
+    <footer className="border-t border-white/[0.06]">
       <Reveal className="mx-auto max-w-[1100px] px-5 py-10 text-center sm:px-6" variant="fade">
         <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#f2f4f6]">
           {footerContent.line}
@@ -23,7 +23,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p className="mt-7 text-sm text-[#5f6870]">
+        <p className="mt-7 text-sm text-[#ffffff] ">
           © {year} {brandName}. Todos los derechos reservados.
         </p>
       </Reveal>

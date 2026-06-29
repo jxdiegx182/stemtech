@@ -6,7 +6,7 @@ export default function FinalCta() {
   return (
     <section
       id="contacto"
-      className="bg-black py-20 sm:py-28"
+      className="py-20 sm:py-28"
       aria-labelledby="contact-title"
     >
       <div className="mx-auto max-w-[1100px] px-5 sm:px-6">
