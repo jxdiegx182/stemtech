@@ -1,10 +1,17 @@
 // Cuando la marca cambie, modificar solo este valor.
-export const brandName = "STEMBOT 3D";
+export const brandName = "Stem Tech";
 
 export const brandDescriptor = "Tecnología y software";
 
+export const brandLogo = {
+  src: "/stem-tech-logo.png",
+  width: 1146,
+  height: 485,
+  alt: "Logo Stem Tech",
+};
+
 export const whatsappUrl =
-  "https://wa.me/593993311974?text=Hola%20STEM%20BOT%203D%2C%20quiero%20hablar%20sobre%20una%20idea%20tecnol%C3%B3gica.";
+  "https://wa.me/593993311974?text=Hola%20Stem%20Tech%2C%20quiero%20hablar%20sobre%20una%20idea%20tecnol%C3%B3gica.";
 
 export const socialLinks = [
   { label: "Instagram", href: "https://www.instagram.com/stembot3d/" },

@@ -1,14 +1,16 @@
 import Image from "next/image";
+import { brandLogo } from "./landing/landingData";
+
 export default function Hero() {
   return (
     <div className=" w-full flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <header className="mx-auto flex flex-1 w-full max-w-4xl flex-col items-center justify-between gap-1 px-40 py-1 md:flex-row md:items-center bg-white dark:bg-black sm:items-start">
         <Image
-          className="dark:invert"
-          src="/StemBot3D.png"
-          alt="StemBot3D logo"
-          width={200}
-          height={60}
+          className="h-auto w-[220px]"
+          src={brandLogo.src}
+          alt={brandLogo.alt}
+          width={brandLogo.width}
+          height={brandLogo.height}
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">

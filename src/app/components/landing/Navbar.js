@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
-import { brandName, navLinks, whatsappUrl } from "./landingData";
+import { brandLogo, brandName, navLinks, whatsappUrl } from "./landingData";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +15,17 @@ export default function Navbar() {
       >
         <a
           href="#inicio"
-          className="text-sm font-extrabold uppercase tracking-[0.22em] text-[#f2f4f6] transition-colors hover:text-[#009fe3] focus:outline-none focus:ring-2 focus:ring-[#009fe3] focus:ring-offset-4 focus:ring-offset-black"
+          className="inline-flex h-14 w-[132px] items-center focus:outline-none focus:ring-2 focus:ring-[#009fe3] focus:ring-offset-4 focus:ring-offset-black"
           aria-label={`${brandName} inicio`}
         >
-          {brandName}
+          <Image
+            src={brandLogo.src}
+            alt={brandLogo.alt}
+            width={brandLogo.width}
+            height={brandLogo.height}
+            priority
+            className="h-12 w-auto"
+          />
         </a>
 
         <div className="hidden items-center gap-8 lg:flex">

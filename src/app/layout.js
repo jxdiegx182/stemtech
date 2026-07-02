@@ -1,5 +1,5 @@
 import { Montserrat } from "next/font/google";
-import { brandName, metadataContent } from "./components/landing/landingData";
+import { brandLogo, brandName, metadataContent } from "./components/landing/landingData";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -9,21 +9,38 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000");
+
 export const metadata = {
+  metadataBase: new URL(siteUrl),
   title: metadataContent.title,
   description: metadataContent.description,
+  icons: {
+    icon: brandLogo.src,
+    apple: brandLogo.src,
+  },
   openGraph: {
     title: brandName,
     description: metadataContent.description,
     type: "website",
     images: [
       {
-        url: "/StemBot3D.png",
-        width: 1024,
-        height: 1024,
-        alt: "Logo STEM BOT 3D",
+        url: brandLogo.src,
+        width: brandLogo.width,
+        height: brandLogo.height,
+        alt: brandLogo.alt,
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: brandName,
+    description: metadataContent.description,
+    images: [brandLogo.src],
   },
 };
 
