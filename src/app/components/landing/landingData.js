@@ -4,9 +4,9 @@ export const brandName = "Stem Tech";
 export const brandDescriptor = "Tecnología y software";
 
 export const brandLogo = {
-  src: "/stem-tech-logo.png",
-  width: 1146,
-  height: 485,
+  src: "/stem-tech-logo-official.png",
+  width: 1276,
+  height: 275,
   alt: "Logo Stem Tech",
 };
 

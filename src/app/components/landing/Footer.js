@@ -1,4 +1,5 @@
-import { brandName, footerContent, socialLinks } from "./landingData";
+import Image from "next/image";
+import { brandLogo, brandName, footerContent, socialLinks } from "./landingData";
 import Reveal from "./Reveal";
 
 export default function Footer() {
@@ -7,7 +8,14 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/[0.06]">
       <Reveal className="mx-auto max-w-[1100px] px-5 py-10 text-center sm:px-6" variant="fade">
-        <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#f2f4f6]">
+        <Image
+          src={brandLogo.src}
+          alt={brandLogo.alt}
+          width={brandLogo.width}
+          height={brandLogo.height}
+          className="mx-auto h-11 w-auto [filter:drop-shadow(0_0_22px_rgba(0,159,227,0.28))]"
+        />
+        <p className="mt-5 text-sm font-bold uppercase tracking-[0.18em] text-[#f2f4f6]">
           {footerContent.line}
         </p>
         <div className="mt-6 flex flex-wrap items-center justify-center gap-5">

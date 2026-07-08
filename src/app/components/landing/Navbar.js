@@ -15,7 +15,7 @@ export default function Navbar() {
       >
         <a
           href="#inicio"
-          className="inline-flex h-14 w-[132px] items-center focus:outline-none focus:ring-2 focus:ring-[#009fe3] focus:ring-offset-4 focus:ring-offset-black"
+          className="inline-flex h-14 w-[190px] items-center focus:outline-none focus:ring-2 focus:ring-[#009fe3] focus:ring-offset-4 focus:ring-offset-black sm:w-[220px]"
           aria-label={`${brandName} inicio`}
         >
           <Image
@@ -24,7 +24,7 @@ export default function Navbar() {
             width={brandLogo.width}
             height={brandLogo.height}
             priority
-            className="h-12 w-auto"
+            className="h-9 w-auto [filter:drop-shadow(0_0_18px_rgba(0,159,227,0.32))] sm:h-10"
           />
         </a>
 
